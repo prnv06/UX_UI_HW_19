@@ -92,6 +92,68 @@ footer ul {
     margin: 0 auto;
 }
 
+.prj {
+    filter: brightness(100%);
+    position: relative;
+    text-align: center;
+    height: 500px;
+    width: 700px;
+    margin-left: 350px;
+    margin-bottom: 20px;
+}
+
+.center1 {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    font-size: 50px;
+  }
+
+.caption1 {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 30px;
+    color: #ffffff;
+    opacity: 0%;
+} 
+
+.center2 {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    font-size: 50px;
+  }
+
+.caption2 {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-size: 30px;
+    color: #ffffff;
+    opacity: 0%;
+} 
+  
+.whiz-img:hover {
+    filter: brightness(50%);
+}
+
+.prj:hover .center1 {
+    opacity: 0;
+}
+
+.prj:hover .caption1 {
+    opacity: 100%;
+}
+
+.prj:hover .center2 {
+    opacity: 0;
+}
+
+.prj:hover .caption2 {
+    opacity: 100%;
+}
+
 @media only screen and (max-width: 600px) {
     .flexContainer {
         flex-direction: column;
