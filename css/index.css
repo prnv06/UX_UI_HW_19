@@ -1,0 +1,115 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 22%;
+    padding: 1%;
+    text-align: center;
+}
+
+nav {
+    width: 73%;
+    padding: 1%;
+    color: white;
+}
+
+.navigation {
+    background-color: #373738;
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #373738;
+    padding: 2%;
+    color: white;
+}
+
+li {
+    padding: 2%;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.skills-container {
+    width: 33%;
+    padding: 5%;
+}
+
+.mySkills {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.image1 {
+    grid-area: image1;
+}
+
+.image2 {
+    grid-area: image2;
+}
+
+.project1 {
+    grid-area: project1;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-areas: 
+    'image1 project1'
+    'image2 project2';
+    grid-template-columns: 300px 400px;
+}
+
+.myWork {
+    width: 900px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        width: 100%;
+    }
+
+    .workGrid {
+        grid-template-areas:
+        'image1'
+        'project1'
+        'image2'
+        'project2';
+    }
+
+    .project1, .project2 {
+        padding-bottom: 30px;
+    }
+}
